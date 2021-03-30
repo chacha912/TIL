@@ -244,3 +244,13 @@ hyphen(-), asterisk(\*), underscore(\_) 3개이상 쓰기
 |          |       빈칸 |                          |
 |   빈칸   |            |
 |          |            | 빈칸                     |
+
+---
+
+참고
+
+- [Markdown Guide - Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+- [Markdown 사용법 총정리](https://heropy.blog/2017/09/30/markdown/)
+  <br>
+- VS code에서 **Markdown Preview Enhanced** extensions 설치하면 markdown 사용할 때 preview 화면에서 바로 확인 가능하다.
+  ![markdown preview 화면](./preview.PNG "markdown preview 화면")
