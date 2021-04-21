@@ -33,9 +33,34 @@ body *::after {
   width: 940px;
 }
 
+/* 헤더 */
 .header {
-  height: 10vh;
+  position: relative;
+  background-color: #fff;
+}
+
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: yellow;
+}
+
+.logo a {
+  display: block;
+  background-color: pink;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+/* 안내링크 */
+.member {
+  margin: 0;
 }
 
 .visual {
