@@ -44,26 +44,30 @@ body *::after {
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
+  display: flow-root;
+  padding: 30px 15px;
+  background-color: rgba(216, 255, 153, 0.226);
+}
+
+.group {
+  float: left;
+  margin: 0 15px;
   height: 60vh;
-  background-color: blue;
 }
 
 .group1 {
   width: 250px;
-  background-color: pink;
+  background-color: rgba(69, 172, 82, 0.178);
 }
 
 .group2 {
   width: 380px;
-  background-color: skyblue;
+  background-color: rgba(168, 21, 21, 0.5);
 }
 
 .group3 {
   width: 190px;
-  background-color: orange;
+  background-color: rgba(38, 0, 255, 0.425);
 }
 
 .slogan {
