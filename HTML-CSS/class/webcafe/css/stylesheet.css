@@ -1,6 +1,13 @@
 @import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @import url(./normalize.css);
 
+/* 스타일 초기화 */
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   font-size: 10px;
 }
@@ -36,7 +43,9 @@ body *::after {
 /* 헤더 */
 .header {
   position: relative;
+  padding: 0 30px;
   background-color: #fff;
+  border-radius: 0 0 15px 15px;
 }
 
 /* 로고 */
@@ -46,12 +55,10 @@ body *::after {
   left: 65px;
   margin-top: 0;
   margin-bottom: 0;
-  background-color: yellow;
 }
 
 .logo a {
   display: block;
-  background-color: pink;
 }
 
 .logo img {
@@ -60,7 +67,24 @@ body *::after {
 
 /* 안내링크 */
 .member {
+  position: relative;
+  left: 10px;
   margin: 0;
+  padding: 2px 0;
+  list-style: none;
+  font-size: 0;
+  text-align: right;
+}
+
+.member li {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.member a {
+  display: inline-block;
+  padding: 8px 10px;
+  text-transform: uppercase;
 }
 
 .visual {
