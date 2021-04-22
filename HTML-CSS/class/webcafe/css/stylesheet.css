@@ -3,7 +3,8 @@
 @import url(./normalize.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -41,7 +42,11 @@ body *::after {
 
 /* 레이아웃  */
 .container {
-  background-color: silver;
+  background-color: #ccc;
+  background-image: url(./images/bg_flower.png),
+    linear-gradient(180deg, #ccc 0%, #eee 30%, #fff 60%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .header,
@@ -110,10 +115,10 @@ body *::after {
   background: #e25a2d
     linear-gradient(
       to bottom,
-      #e25a2d 0%,
-      #e29c2b 45%,
-      #e29c2b 60%,
-      #e25a2d 100%
+      #e29c2b 0%,
+      #e25a2d 45%,
+      #e25a2d 60%,
+      #e29c2b 100%
     );
   margin: 5px 0 0 0;
   padding-left: 225px;
@@ -247,38 +252,120 @@ body *::after {
   z-index: 10;
   display: inline-block;
   margin: 0;
-  background-color: yellow;
   animation-name: textAni;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/* 메인 콘텐츠 */
+
 .main {
   display: flow-root;
   padding: 30px 15px;
-  background-color: rgba(216, 255, 153, 0.226);
+  min-height: 450px;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
   float: left;
   margin: 0 15px;
-  height: 60vh;
 }
 
 .group1 {
   width: 250px;
-  background-color: rgba(69, 172, 82, 0.178);
 }
 
 .group2 {
   width: 380px;
-  background-color: rgba(168, 21, 21, 0.5);
 }
 
 .group3 {
   width: 190px;
-  background-color: rgba(38, 0, 255, 0.425);
+}
+
+/* 로그인 폼 */
+
+.login {
+  padding: 15px 10px 10px;
+  background: #e29c2b radial-gradient(circle at right top, #e29c2b, #e25a2d);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.login-heading {
+  margin: 0;
+  color: #ff0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.login-form fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border: 0 none;
+  border-bottom: 1px solid #ccc;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 50px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.login-form input {
+  padding: 2px 2px 2px 5px;
+  width: 95px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.user-pwd {
+  margin-top: 5px;
+}
+
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 5px;
+  width: 50px;
+  height: 44px;
+  background: #e25a2d;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.sign {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+}
+
+.sign a {
+  font-size: 1.2rem;
+}
+
+.sign .icon-right-open {
+  color: #e25a2d;
 }
 
 .slogan {
