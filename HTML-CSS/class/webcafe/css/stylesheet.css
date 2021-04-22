@@ -189,9 +189,69 @@ body *::after {
   padding: 10px 10px 10px 0;
 }
 
+/* 비주얼 */
+@keyframes textAni {
+  0% {
+    transform: translate(0, 0);
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translate(400px, 75px);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes flowerAni {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .visual {
-  height: 10vh;
-  background-color: lime;
+  position: relative;
+  height: 120px;
+}
+
+.visual::before,
+.visual::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  animation: flowerAni 2s infinite alternate 1s;
+}
+
+.visual::before {
+  background-image: url(./images/ani_flower_01.png),
+    url(./images/ani_flower_02.png);
+  background-position: 0 -10px, 670px 0;
+}
+
+.visual::after {
+  background-image: url(./images/ani_flower_03.png),
+    url(./images/ani_flower_04.png);
+  background-position: 300px 10px, 800px 5px;
+  animation-delay: 1s;
+}
+
+.visual-text {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  margin: 0;
+  background-color: yellow;
+  animation-name: textAni;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .main {
