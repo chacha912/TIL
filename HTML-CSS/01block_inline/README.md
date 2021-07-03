@@ -15,7 +15,7 @@
 
 ## HTML 태그
 
-####`<html>`
+#### `<html>`
 
    ```html
    <html lang="ko">
@@ -27,7 +27,7 @@
    언어코드는 [iso 639-1](https://ko.wikipedia.org/wiki/ISO_639-1_%EC%BD%94%EB%93%9C_%EB%AA%A9%EB%A1%9D) 에서 확인할 수 있다.
    <br>
 
-####`<head>` `<body>`
+#### `<head>` `<body>`
 
    ```html
    <!DOCTYPE html>
@@ -44,7 +44,7 @@
    html 작성하기 전, 최상단에 doctype 명시하여 브라우저가 html5 버전으로 출력할 수 있도록 한다.
    <br>
 
-####`<head>` 내부
+#### `<head>` 내부
 
 1. title 
 
@@ -70,7 +70,7 @@
    </html>
    ```
 
-####`<body>` 내부
+#### `<body>` 내부
 
 1. `<header>` `<footer>` 
     각각 헤더, 푸터 영역을 지칭하겠다는 의미
