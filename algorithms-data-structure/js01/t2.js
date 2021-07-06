@@ -16,21 +16,20 @@ function solution(s) {
       else temp = pl + temp;
     }
 
-    flag = 1;
-    let num = 0;
+    flag = true;
+    let num = '';
 
     while (flag) {
       const n = stack.pop();
       if (/[0-9]/.test(n)) {
-        num += n * flag;
-        flag *= 10;
+        num = n + num;
       } else {
         stack.push(n);
         flag = false;
       }
     }
 
-    stack.push(temp.repeat(num));
+    stack.push(temp.repeat(+num));
   }
   return stack.join('');
 }
