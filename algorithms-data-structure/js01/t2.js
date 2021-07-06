@@ -7,25 +7,21 @@ function solution(s) {
       continue;
     }
 
-    let flag = true;
     let temp = '';
-
-    while (flag) {
+    while (true) {
       const pl = stack.pop();
-      if (pl === '(') flag = false;
+      if (pl === '(') break;
       else temp = pl + temp;
     }
 
-    flag = true;
     let num = '';
-
-    while (flag) {
+    while (true) {
       const n = stack.pop();
       if (/[0-9]/.test(n)) {
         num = n + num;
       } else {
         stack.push(n);
-        flag = false;
+        break;
       }
     }
 
