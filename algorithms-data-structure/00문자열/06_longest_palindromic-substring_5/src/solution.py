@@ -3,10 +3,9 @@ def solution(s):
     answer = ''
 
     def checkPalin(left, right):
-        if left < 0 or right >= L:
-            return s[left+1:right]
-        if s[left] == s[right]:
-            return checkPalin(left-1, right+1)
+        while left >= 0 and right < L and s[left] == s[right]:
+            left -= 1
+            right += 1
         return s[left+1:right]
 
     if L < 2 or s == s[::-1]:
